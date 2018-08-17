@@ -1,33 +1,90 @@
 ---
-title: "Untitled"
-output: ioslides_presentation
+title: "Transforming Health <br> and Social Care <br> Publications in Scotland"
+subtitle: "uRos Conference 2018"
+author: 'Anna Price and David Caldwell <br> Information Services Division, NHS Scotland <br>'
+date: "September 4, 2018 <br><br> Slides: https://github.com/NHS-NSS-transforming-publications/uRos2018"
+output:
+  ioslides_presentation:
+    css: my-theme.css
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+library(knitr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Background
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+- The Information Services Division (ISD) of NHS Scotland has a long history of producing official and national statistics. 
+- We produce around 200 publications each year.
+- Traditional publication format is a **static pdf document** with accompanying **excel tables**.
+- Production uses **proprietary software** and is **time-consuming**, involving extensive manual formatting and checking.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
+```{r out.width = "40%", fig.align = 'center'}
+include_graphics("images/pdf report.png")
 ```
 
-## Slide with Plot
+## Vision
 
-```{r pressure}
-plot(pressure)
+```{r out.width = "75%", fig.align = 'center'}
+include_graphics("images/VisionPoster.png")
 ```
+
+## Next Steps
+
+- **Psychiatric Hospital Activity publication** to be released 25 September 2018.
+- **Thematic** approach to publications.
+- Re-design of [Data quality](https://www.isdscotland.org/Health-Topics/Hospital-Care/Publications/2018-06-26/Acute-Hospital-Publication/data-quality/) page.
+- Automate production process ([Reproducible Analytical Pipeline](https://ukgovdatascience.github.io/rap_companion/)).
+
+```{r out.width = "60%", fig.align = 'center'}
+include_graphics("images/rap.png")
+```
+
+## Thank You {.smaller}
+<div class="columns-2">
+<ul>
+```{r out.width = "40%"}
+include_graphics("images/Anna_Avatar.jpg")
+```
+<br>
+```{r out.width = "12%"}
+include_graphics("images/twitter.png")
+```
+@price_AH
+<br>
+```{r out.width = "12%", }
+include_graphics("images/github.png")
+```
+annahprice
+</ul>
+<ul>
+```{r out.width = "40%"}
+include_graphics("images/David_Avatar.jpg")
+```
+<br>
+```{r out.width = "12%"}
+include_graphics("images/twitter.png")
+```
+@KingTyjet92
+<br>
+```{r out.width = "12%"}
+include_graphics("images/github.png")
+```
+davidc92
+</ul>
+</div>
+
+```{r out.width = "30%"}
+include_graphics("images/team.png")
+```
+
+Acute Activity publication: https://bit.ly/2PhLYbL
+
+Transforming Publishing on GitHub: <br> https://github.com/NHS-NSS-transforming-publications
+
+ISD on GitHub: https://github.com/Health-SocialCare-Scotland
+
+ISD on Twitter: @NHSNSS
+
 
