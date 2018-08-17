@@ -2,7 +2,7 @@
 title: "Transforming Health <br> and Social Care <br> Publications in Scotland"
 subtitle: "uRos Conference 2018"
 author: 'Anna Price and David Caldwell <br> Information Services Division, NHS Scotland <br>'
-date: "September ?, 2018 <br><br> Slides: https://github.com/NHS-NSS-transforming-publications/uRos2018"
+date: "September 13, 2018 <br><br> Slides: https://github.com/NHS-NSS-transforming-publications/uRos2018"
 output:
   ioslides_presentation:
     css: my-theme.css
@@ -29,6 +29,49 @@ include_graphics("images/pdf report.png")
 ```{r out.width = "75%", fig.align = 'center'}
 include_graphics("images/VisionPoster.png")
 ```
+
+## Initial User Engagament
+
+- Focus groups and interviews with over 10 different user groups.
+- Determined user experiences of existing product and how the new product deisgn could meet their needs.
+- Created user stories which influenced the features of the minimum viable product.
+
+```{r out.width = "90%", fig.align = 'center'}
+include_graphics("images/user engagement.png")
+```
+
+## Minimum Viable Product
+
+- [Acute Hospital Activity and Beds publication](http://www.isdscotland.org/Health-Topics/Hospital-Care/Publications/2018-06-26/Acute-Hospital-Publication/) released in December 2017.
+
+```{r out.width = "75%", fig.align = 'center'}
+include_graphics("images/acute activity.png")
+```
+
+## MVP: Data explorer
+
+```{r out.width = "85%", fig.align = 'center'}
+include_graphics("images/data explorer.png")
+```
+[Acute Activity data explorer](https://www.isdscotland.org/Health-Topics/Hospital-Care/Publications/2018-06-26/Acute-Hospital-Publication/data-explorer/)
+[R Shiny code](https://github.com/Health-SocialCare-Scotland/Hospital-Acute-Activity/tree/master/Data-Explorer)
+
+## User Feedback and Testing
+
+```{r out.width = "85%", fig.align = 'center'}
+include_graphics("images/quotes.png")
+```
+
+## The Challenge of Scaling
+
+- R knowledge:
+    - R training at an organisation level
+    - [R Style Guide](https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md)
+    - Blank [R Project](https://github.com/Health-SocialCare-Scotland/r-project-structure) and [R Shiny](https://github.com/Health-SocialCare-Scotland/rshiny-project-structure) templates
+    - [Resources](https://github.com/NHS-NSS-transforming-publications/resources)
+- Consistency:
+    - Share [R Shiny code] for the original data explorer (https://github.com/Health-SocialCare-Scotland/Hospital-Acute-Activity/tree/master/Data-Explorer)
+    - Next step: design manual
 
 ## Next Steps
 
