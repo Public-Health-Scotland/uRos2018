@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Background
 
-- The Information Services Division (ISD) of NHS Scotland has a long history of producing official and national statistics. 
+- The Information Services Division (ISD) of the National Health Service (NHS) Scotland has a long history of producing official and national statistics. 
 - We produce around 200 publications each year.
 - Traditional publication format is a **static pdf document** with accompanying **excel tables**.
 - Production uses **proprietary software** and is **time-consuming**, involving extensive manual formatting and checking.
@@ -40,7 +40,7 @@ include_graphics("images/VisionPoster.png")
 include_graphics("images/user engagement.png")
 ```
 
-## Minimum Viable Product
+## Minimum Viable Product (MVP)
 
 - [Acute Hospital Activity and Beds publication](http://www.isdscotland.org/Health-Topics/Hospital-Care/Publications/2018-06-26/Acute-Hospital-Publication/) released in December 2017.
 
@@ -54,30 +54,44 @@ include_graphics("images/acute activity.png")
 include_graphics("images/data explorer.png")
 ```
 [Acute Activity data explorer](https://www.isdscotland.org/Health-Topics/Hospital-Care/Publications/2018-06-26/Acute-Hospital-Publication/data-explorer/)
-[R Shiny code](https://github.com/Health-SocialCare-Scotland/Hospital-Acute-Activity/tree/master/Data-Explorer)
+<br>
+<br>[R Shiny code](https://github.com/Health-SocialCare-Scotland/Hospital-Acute-Activity/tree/master/Data-Explorer)
 
-## User Feedback and Testing
+## User Feedback
 
 ```{r out.width = "85%", fig.align = 'center'}
 include_graphics("images/quotes.png")
 ```
 
+## User Testing
+
+- To determine how the explorer **works in practice**, and to identify potential **faults or usability issues**.
+- In general, feedback indicates that the core functionality of the explorer is **highly usable**.
+- Features to improve usability include:
+    - Features that distract or confuse users removed from the `plotly` toolbar
+    - `plotly` toolbar displays by default
+    - Default graph automatically displays
+
 ## The Challenge of Scaling
 
-- R knowledge:
+- R knowledge within ISD:
     - R training at an organisation level
     - [R Style Guide](https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md)
     - Blank [R Project](https://github.com/Health-SocialCare-Scotland/r-project-structure) and [R Shiny](https://github.com/Health-SocialCare-Scotland/rshiny-project-structure) templates
     - [Resources](https://github.com/NHS-NSS-transforming-publications/resources)
-- Consistency:
-    - Share [R Shiny code] for the original data explorer (https://github.com/Health-SocialCare-Scotland/Hospital-Acute-Activity/tree/master/Data-Explorer)
-    - Next step: design manual
+- Consistency of Shiny dashboards:
+    - Share [R Shiny code](https://github.com/Health-SocialCare-Scotland/Hospital-Acute-Activity/tree/master/Data-Explorer) for the original data explorer
+    - Future: design manual
+- IT 
+    - shiny.io server and iframes
+    - R and RStudio versions
+    - package management
 
 ## Next Steps
 
 - **Psychiatric Hospital Activity publication** to be released 25 September 2018.
-- **Thematic** approach to publications.
-- Re-design of [Data quality](https://www.isdscotland.org/Health-Topics/Hospital-Care/Publications/2018-06-26/Acute-Hospital-Publication/data-quality/) page.
+- Continued **refinement** of the current Data explorer.
+- **Accessibility** review of the Data explorer.
 - Automate production process ([Reproducible Analytical Pipeline](https://ukgovdatascience.github.io/rap_companion/)).
 
 ```{r out.width = "60%", fig.align = 'center'}
